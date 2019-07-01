@@ -1,0 +1,52 @@
+body {
+  background-color: #333;
+  margin: 0%;
+}
+.div {
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+@keyframes myanimation {
+  0% {
+    background-color: white;
+    border-radius: 0px 0px 0px 100px;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: crimson;
+    border-radius: 0px 0px 100px 100px;
+    left: 300px;
+    top: 0;
+  }
+
+  50% {
+    background-color: coral;
+    border-radius: 0px 100px 100px 100px;
+    left: 300px;
+    top: 300px;
+  }
+
+  75% {
+    background-color: chocolate;
+    border-radius: 100px 100px 100px 100px;
+    left: 0px;
+    top: 300px;
+  }
+
+  100% {
+    background-color: white;
+    border-radius: 0px 0px 0px 0px;
+    left: 0px;
+    top: 0px;
+  }
+}
